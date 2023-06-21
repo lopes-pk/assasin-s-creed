@@ -6,7 +6,7 @@ import timeLine from './timeLine.png';
 export default function FeaturesSection() {
   return (
     <main className="flex relative" id="featuresSection">
-      <span className="absolute z-10 -top-9 w-full h-24 bg-black blur-xl" />
+      <span className="absolute z-10 -top-8 w-full h-24 bg-black blur-xl" />
       <div style={{ backgroundImage: `url(${background})` }} className=" relative h-screen w-[55%] bg-cover">
         <div style={{ backgroundImage: `url(${effectBackground})` }} className="absolute h-screen w-[100%] bg-cover" />
       </div>

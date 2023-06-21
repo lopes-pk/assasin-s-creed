@@ -7,7 +7,7 @@ import logoTwitch from './twitch.svg';
 
 export default function Rodape() {
   return (
-    <footer className="relative bg-[rgb(7,8,8)]">
+    <footer className="relative bg-[rgb(9,10,11)]">
       <nav className="mb-4 text-white flex items-baseline uppercase font-bold font-primary justify-evenly text-xs">
         <img src={logo} alt="Logo do rodapé" className="h-16" />
         <div className="flex gap-8">

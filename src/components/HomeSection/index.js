@@ -48,7 +48,7 @@ export default function HeroSection() {
           </button>
         </div>
       </div>
-      <span className="absolute z-10 -bottom-14 w-full h-24 bg-gray-950 blur-xl" />
+      <span className="absolute z-10 -bottom-14 w-full -left-5 h-24 bg-gray-950 blur-2xl" />
     </div>
   );
 }

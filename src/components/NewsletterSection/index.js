@@ -1,11 +1,12 @@
 /* eslint-disable max-len */
-import React from 'react';
+import React, { useState } from 'react';
 import imagemNewsletter from './imageNewsletter.png';
 import efeitoImagemNewsletter from './efeitoImagemNewsletter.png';
 
 export default function NewsletterSection() {
+  const [email, setEmail] = useState('');
   return (
-    <section className="bg-[rgb(7,8,8)] w-full h-[110vh] flex items-center justify-center" id="subscribeSection">
+    <section className="bg-[rgb(9,10,11)] w-full h-[110vh] flex items-center justify-center" id="subscribeSection">
       {/* Imagem Newsletter */}
       <div className="relative">
         <img src={imagemNewsletter} alt="imagem de fundo da newsletter" className="absolute w-[260px] h-[420px]" />
@@ -27,8 +28,26 @@ export default function NewsletterSection() {
           </p>
         </div>
         <div className="mt-14">
-          <input type="text" placeholder="Your email address" className="p-4 w-[16.4rem] bg-[rgb(22,23,24)] rounded-md text-white text-xs placeholder-gray-500" />
-          <button type="button" className="py-4 bg-buttonPurchase rounded-md px-10 text-black font-primary font-bold text-xs ml-4">Subscribe now</button>
+          <input
+            type="text"
+            placeholder="Your email address"
+            className="outline-none p-4 w-[16.4rem] bg-[rgb(22,23,24)] rounded-md text-white text-xs placeholder-gray-500"
+            onChange={(event) => {
+              const emailNewsletter = event.target.value;
+              setEmail(emailNewsletter);
+            }}
+            value={email}
+          />
+          <button
+            type="button"
+            className="py-4 bg-buttonPurchase rounded-md px-10 text-black font-primary font-bold text-xs ml-4 hover:opacity-80 duration-100 ease-linear"
+            onClick={() => {
+              setEmail('');
+            }}
+          >
+            Subscribe now
+
+          </button>
         </div>
       </div>
     </section>

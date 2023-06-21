@@ -14,19 +14,19 @@ export default function Cabecalho() {
           alt="Logo no cabeçalho da pagina"
         />
         <nav className="text-white font-primary uppercase font-bold text-sm flex gap-9 tracking-widest h-4">
-          <a href="#home" alt="main">
+          <a href="#home" alt="main" className="hover:opacity-70 duration-100 ease-linear">
             main
           </a>
-          <a href="#aboutSection" alt="about">
+          <a href="#aboutSection" alt="about" className="hover:opacity-70 duration-100 ease-linear">
             about
           </a>
-          <a href="#featuresSection" alt="game features">
+          <a href="#featuresSection" alt="game features" className="hover:opacity-70 duration-100 ease-linear">
             game features
           </a>
-          <a href="#requirementsSection" alt="system requirements">
+          <a href="#requirementsSection" alt="system requirements" className="hover:opacity-70 duration-100 ease-linear">
             system requirements
           </a>
-          <a href="#subscribeSection" alt="subscribe">
+          <a href="#subscribeSection" alt="subscribe" className="hover:opacity-70 duration-100 ease-linear">
             subscribe
           </a>
         </nav>
@@ -38,10 +38,10 @@ export default function Cabecalho() {
           <span className="mx-4 bg-white h-7 mt-[-2px] w-[1px]" />
           <div className="flex gap-5 h-4">
             <a href="/" alt="">
-              <img src={xboxIcon} alt="logo xbox" />
+              <img src={xboxIcon} alt="logo xbox" className="hover:opacity-70 duration-100 ease-linear" />
             </a>
             <a href="/" alt="">
-              <img src={steamIcon} alt="logo steam" />
+              <img src={steamIcon} alt="logo steam" className="hover:opacity-70 duration-100 ease-linear" />
             </a>
           </div>
         </div>
